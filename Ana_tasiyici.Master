@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Ana_tasiyici.master.cs" Inherits="sikayet_sistemi_deneme_1.Ana_tasiyici" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Şikayet Sistemi</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="şikayet_sayfasi.aspx">Şikayetin mi var?</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Ana Sayfa</a></li>
+                    <li><a href="#">Şikayetlerim</a></li>
+                    <li><a href="#">Taleplerim</a></li>
+                    
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="kayit_sayfasi.aspx"><span class="glyphicon glyphicon-user"></span> Kayıt Ol</a></li>
+                    <li><a href="giris_sayfasi.aspx"><span class="glyphicon glyphicon-log-in"></span> Giriş Yap</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Navbar Bitişi -->
+
+        <!-- Sayfa İçeriklerinin Geleceği Alan -->
+        <div class="container">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+    </form>
+
+    <!-- Bootstrap 3 JS ve jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
